@@ -21,7 +21,7 @@
 
     header{
       background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-      url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600');
+      url('https://res.cloudinary.com/tourhq/image/upload/fl_progressive,f_auto,h_507,w_900,g_auto,c_fill,q_auto/yuthwcebdrwd8xmdpo5a');
       background-size:cover;
       background-position:center;
       height:100vh;
@@ -223,7 +223,7 @@
     </p>
 
     <img class="hero-img"
-    src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1600"
+    src="https://s1.wklcdn.com/image_289/8688295/72743588/47767741.jpg"
     alt="Montañas y laguna">
   </section>
 
@@ -348,7 +348,7 @@
     <h2>Infraestructura</h2>
 
     <p>
-      Las infraestructuras que proponemos etan compuestas por la planta hidroelectrica, represa de contencion, planta de tratamiento de agua para el consumo humano
+      Las infraestructuras que proponemos estan compuestas por la planta hidroelectrica, represa de contencion, planta de tratamiento de agua para el consumo humano
       y como ultima propuesta punto de captacion para el regadio de sembrios de los pobladores.
     </p>
 
@@ -487,19 +487,19 @@
 
     <div class="gallery">
 
-      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200">
+      <img src="https://scontent.flim6-4.fna.fbcdn.net/v/t39.30808-6/487772111_4083572558545818_5798735604666083095_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=105&ccb=1-7&_nc_sid=aa7b47&_nc_eui2=AeHU8Yq3TV-blg4ocwo_Q5LDzpLj5CToGuvOkuPkJOga64UsB7E0HWdXq4LXjAmv70IGxUoVgc5esBLXgW4QOWbJ&_nc_ohc=lGh_B9o8sGIQ7kNvwG2Iw09&_nc_oc=AdrCo1jVczOkRlcAWcwTzv-s48FGFNvRsyi67XAhhn8WWben9dbuEbyL8KIW1E3ZgVM&_nc_zt=23&_nc_ht=scontent.flim6-4.fna&_nc_gid=MtVCeOjfgPnPIuKNZTFk6Q&_nc_ss=7b2a8&oh=00_Af5brRB5uGAqXjS8lEuflGQZDjq9ACJaZh9SuJx-RCqqaA&oe=6A16AEA9">
 
-      <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1200">
+      <img src="https://wmo.int/sites/default/files/Map_of_Lake_513_and_Carhuaz.png?TItRY0bP.q4z2FWjRB2XHNbv329AQVzB">
 
-      <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?q=80&w=1200">
+      <img src="https://share.google/2MqekwxdBqUtpJ7vj">
 
-      <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1200">
+      <img src="https://s0.wklcdn.com/image_23/693915/184898105/115810908Master.jpg">
 
     </div>
 
   </section>
 
-  <section id="mapa">https://maps.app.goo.gl/BGZhxq5yxuTVCfW17 
+  <section id="mapa"> 
 
     <h2>Ubicación de Laguna 513</h2>
 
@@ -509,16 +509,81 @@
 
   </section>
 
-  <section id="videos">
-    <h2>Video sobre Modelación Hidrológica</h2>
+  <section class="videos">
 
-    <iframe
-      src="https://www.youtube.com/embed/aqJwIHh4j0Q"
-      allowfullscreen>
-    </iframe>
-      src="https://www.bing.com/videos/riverview/relatedvideo?q=laguina%20513&mmscn=stvo&mid=AE59F85C9FD9DAFFB210AE59F85C9FD9DAFFB210&ajaxhist=0"
-    </iframe>
-      src="https://www.bing.com/videos/riverview/relatedvideo?q=laguna+513+modelacion+hidraulica&&mid=37BD51EA665062E9B1BB37BD51EA665062E9B1BB&churl=https%3a%2f%2fwww.youtube.com%2fchannel%2fUCaNFoY5RSS-UGV7N7Fa6EMw&FORM=VRDGAR"
+    <h1>Videos del Proyecto</h1>
+
+    <div class="contenedor-videos">
+
+        <!-- VIDEO 1 -->
+        <div class="video">
+            <iframe 
+                src="https://www.youtube.com/embed/nuH1bDZSp5E"
+                title="Video Laguna 513"
+                allowfullscreen>
+            </iframe>
+
+            <p>Video sobre la Laguna 513</p>
+        </div>
+
+        <!-- VIDEO 2 -->
+        <div class="video">
+            <iframe 
+                src="https://www.youtube.com/embed/sOdivovz4c0"
+                title="Modelación Hidráulica"
+                allowfullscreen>
+            </iframe>
+
+            <p>Explicación de modelación hidráulica</p>
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+
+.videos{
+    padding: 50px 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.videos h1{
+    font-size: 40px;
+    color: #003366;
+    margin-bottom: 40px;
+}
+
+.contenedor-videos{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.video{
+    background: white;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    width: 400px;
+}
+
+.video iframe{
+    width: 100%;
+    height: 230px;
+    border-radius: 15px;
+}
+
+.video p{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+</style>
+    
   </section>
 
   <section id="contacto">
