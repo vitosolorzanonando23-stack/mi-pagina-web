@@ -37,12 +37,14 @@
     header h1{
       font-size:4rem;
       margin-bottom:20px;
-    }
+      text-shadow: 3px 3px 10px rgba(0,0,0,0.7);
+}
 
     header p{
       max-width:900px;
       font-size:1.2rem;
-    }
+       text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
 
     nav{
       position:sticky;
@@ -157,24 +159,38 @@
     }
 
     .gallery img{
-      width:100%;
-      height:250px;
-      object-fit:cover;
-      border-radius:12px;
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  border-radius:12px;
+  transition: transform 0.4s;
+}
+
+.gallery img:hover{
+  transform: scale(1.04);
+}
     }
 
     @media(max-width:768px){
 
-      header h1{
-        font-size:2.5rem;
-      }
+  header h1{
+    font-size:2.5rem;
+  }
 
-      nav a{
-        display:block;
-        margin:10px 0;
-      }
+  nav a{
+    display:block;
+    margin:10px 0;
+  }
 
-    }
+  .video{
+    width:100%;
+  }
+
+  .card{
+    width:100%;
+  }
+
+}
 
   </style>
 </head>
@@ -202,6 +218,7 @@
     <a href="#galeria">Galería</a>
     <a href="#mapa">Mapa</a>
     <a href="#videos">Videos</a>
+    <a href="#integrantes">Integrantes</a>
     <a href="#contacto">Contacto</a>
   </nav>
 
@@ -391,10 +408,10 @@
         <p>
           Beneficios ambientales y sociales generados por ecosistemas:
         </p>
-        Energia segura y limpia.
-        Agua potable para el consumo.
-        Mayor seguridad ambiental.
-        Desarrollo a las comunidades.
+         <li>Energia segura y limpia.</li>
+        <li>Agua potable para el consumo.</li>
+        <li>Mayor seguridad ambiental.</li>
+        <li>Desarrollo a las comunidades.</li>
       </div>
 
     </div>
@@ -509,7 +526,7 @@
 
   </section>
 
-  <section class="videos">
+  <section id="videos" class="videos">
 
     <h1>Videos del Proyecto</h1>
 
@@ -582,7 +599,7 @@
     color: #333;
 }
 </style>
-  <section class="integrantes">
+  <section id="integrantes" class="integrantes">
 
     <h1>Integrantes del Grupo</h1>
 
@@ -678,7 +695,6 @@
 }
 
 </style>
-</style>
     
   </section>
 
@@ -742,7 +758,7 @@
     <br>
 
     <p>
-      © 2026 - Todos los derechos reservados
+      © 2026 | Proyecto Académico de Modelación Hidrológica - Laguna 513
     </p>
 
   </footer>
