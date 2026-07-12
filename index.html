@@ -636,31 +636,42 @@ section{
 
     <h1>Videos del Proyecto</h1>
 
-    <div class="contenedor-videos">
+<div class="contenedor-videos">
 
-        <!-- VIDEO 1 -->
-        <div class="video">
-            <iframe 
-                src="https://www.youtube.com/embed/nuH1bDZSp5E"
-                title="Video Laguna 513"
-                allowfullscreen>
-            </iframe>
+    <!-- VIDEO 1 -->
+    <div class="video">
+        <iframe
+            src="https://www.youtube.com/embed/nuH1bDZSp5E"
+            title="Video Laguna 513"
+            allowfullscreen>
+        </iframe>
 
-            <p>Video sobre la Laguna 513</p>
-        </div>
-
-        <!-- VIDEO 2 -->
-        <div class="video">
-            <iframe 
-                src="https://www.youtube.com/embed/sOdivovz4c0"
-                title="Modelación Hidráulica"
-                allowfullscreen>
-            </iframe>
-
-            <p>Explicación de modelación hidráulica</p>
-        </div>
-
+        <p>Video sobre la Laguna 513</p>
     </div>
+
+    <!-- VIDEO 2 -->
+    <div class="video">
+        <iframe
+            src="https://www.youtube.com/embed/sOdivovz4c0"
+            title="Modelación Hidráulica"
+            allowfullscreen>
+        </iframe>
+
+        <p>Explicación de modelación hidráulica</p>
+    </div>
+
+    <!-- VIDEO 3 -->
+    <div class="video">
+        <iframe
+            src="https://www.youtube.com/embed/QFD8_nCHx4Q"
+            title="Proyecto de Modelación Hidrológica"
+            allowfullscreen>
+        </iframe>
+
+        <p>Proyecto de modelación hidrológica y propuesta de infraestructura.</p>
+    </div>
+
+</div>
 
 </section>
 
@@ -681,7 +692,8 @@ section{
 .contenedor-videos{
     display: flex;
     justify-content: center;
-    gap: 25px;
+    align-items: flex-start;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
@@ -690,7 +702,8 @@ section{
     padding: 15px;
     border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    width: 400px;
+    width: 430px;
+    max-width: 100%;
 }
 
 .video iframe{
