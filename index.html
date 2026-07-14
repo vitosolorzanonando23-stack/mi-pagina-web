@@ -14,13 +14,19 @@
     }
 
     body{
-  background:#f4f7fb;
-  color:#222;
-  line-height:1.7;
 
-  scroll-behavior:smooth;
-  scroll-snap-type:y mandatory;
-  overflow-y:scroll;
+background:#f4f7fb;
+
+color:#222;
+
+line-height:1.7;
+
+scroll-behavior:smooth;
+
+scroll-snap-type:y mandatory;
+
+overflow-y:scroll;
+
 }
 
     header{
@@ -85,8 +91,9 @@
       border-radius:15px;
       box-shadow:0 4px 15px rgba(0,0,0,0.08);
 
-      min-height:100vh;
       scroll-snap-align:start;
+      min-height:100vh;
+      
 }
 
     section h2{
@@ -1025,5 +1032,33 @@ target="_blank">
 
 </a>
 
+<script>
+
+const boton=document.getElementById("btnMenu");
+
+const panel=document.getElementById("panelMenu");
+
+boton.onclick=function(){
+
+panel.classList.toggle("activo");
+
+}
+
+window.onclick=function(e){
+
+if(!e.target.matches("#btnMenu")){
+
+if(panel.classList.contains("activo")){
+
+panel.classList.remove("activo");
+
+}
+
+}
+
+}
+
+</script>
+  
 </body>
 </html>
