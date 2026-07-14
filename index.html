@@ -14,10 +14,14 @@
     }
 
     body{
-      background:#f4f7fb;
-      color:#222;
-      line-height:1.7;
-    }
+  background:#f4f7fb;
+  color:#222;
+  line-height:1.7;
+
+  scroll-behavior:smooth;
+  scroll-snap-type:y mandatory;
+  overflow-y:scroll;
+}
 
     header{
       background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
@@ -80,7 +84,10 @@
       width:90%;
       border-radius:15px;
       box-shadow:0 4px 15px rgba(0,0,0,0.08);
-    }
+
+      min-height:100vh;
+      scroll-snap-align:start;
+}
 
     section h2{
       color:#0c3c60;
@@ -289,7 +296,33 @@ section{
 
 <body>
 
-  <header>
+<!-- MENÚ RÁPIDO -->
+
+<div class="menu-rapido">
+
+    <button id="btnMenu" class="btn-menu">
+        &#8942;
+    </button>
+
+    <div id="panelMenu" class="panel-menu">
+
+        <a href="#introduccion">🏠 Inicio</a>
+        <a href="#laguna">🏔 Laguna 513</a>
+        <a href="#hidrologia">💧 Modelación</a>
+        <a href="#infraestructura">🏗 Infraestructura</a>
+        <a href="#fases">📋 Fases</a>
+        <a href="#galeria">🖼 Galería</a>
+        <a href="#mapa">📍 Mapa</a>
+        <a href="#videos">🎥 Videos</a>
+        <a href="#integrantes">👥 Integrantes</a>
+        <a href="#contacto">✉ Contacto</a>
+
+    </div>
+
+</div>
+
+<header>
+
     <h1>MODELACIÓN HIDRÁULICA DE LA LAGUNA 513 Y LA GESTIÓN DE RIESGO EN LA PROVINCIA DE CARHUAZ</h1>
     <p>
       Proyecto académico enfocado en la Laguna 513 y la infraestructura natural
