@@ -6,6 +6,137 @@
   <title>Modelación Hidrológica - Laguna 513</title>
 
   <style>
+    /* CONTENEDOR GENERAL */
+
+.contenedor-principal{
+
+display:flex;
+
+align-items:flex-start;
+
+gap:35px;
+
+padding:30px;
+
+}
+
+/* CONTENIDO */
+
+.contenido{
+
+flex:1;
+
+}
+
+/* SIDEBAR */
+
+.sidebar{
+
+width:320px;
+
+position:sticky;
+
+top:100px;
+
+background:white;
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:0 8px 25px rgba(0,0,0,.12);
+
+}
+
+.sidebar h2{
+
+color:#003366;
+
+margin-bottom:20px;
+
+text-align:center;
+
+}
+
+/* TARJETAS */
+
+.proyecto{
+
+margin-bottom:20px;
+
+padding:18px;
+
+border-radius:15px;
+
+background:#f7fbff;
+
+border-left:5px solid #007acc;
+
+transition:.3s;
+
+}
+
+.proyecto:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+.proyecto h3{
+
+color:#003366;
+
+margin-bottom:10px;
+
+}
+
+.proyecto a{
+
+display:inline-block;
+
+margin-top:10px;
+
+padding:10px 18px;
+
+background:#007acc;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:8px;
+
+}
+
+.proyecto a:hover{
+
+background:#003366;
+
+}
+
+/* CELULAR */
+
+@media(max-width:1000px){
+
+.contenedor-principal{
+
+flex-direction:column;
+
+}
+
+.sidebar{
+
+width:100%;
+
+position:relative;
+
+top:0;
+
+}
+
+}
     *{
       margin:0;
       padding:0;
@@ -441,6 +572,10 @@ text-align:justify;
 
 <body>
 
+<div class="contenedor-principal">
+
+    <main class="contenido">
+  
 <!-- MENÚ RÁPIDO -->
 
 <div class="menu-rapido">
@@ -1102,6 +1237,56 @@ text-align:justify;
 
   </section>
 
+    </main>
+
+    <aside class="sidebar">
+
+        <h2>Proyectos Relacionados</h2>
+
+        <div class="proyecto">
+
+            <h3>Proyecto 1</h3>
+
+            <p>Próximamente...</p>
+
+            <a href="#">Ver proyecto</a>
+
+        </div>
+
+        <div class="proyecto">
+
+            <h3>Proyecto 2</h3>
+
+            <p>Próximamente...</p>
+
+            <a href="#">Ver proyecto</a>
+
+        </div>
+
+        <div class="proyecto">
+
+            <h3>Proyecto 3</h3>
+
+            <p>Próximamente...</p>
+
+            <a href="#">Ver proyecto</a>
+
+        </div>
+
+        <div class="proyecto">
+
+            <h3>Proyecto 4</h3>
+
+            <p>Próximamente...</p>
+
+            <a href="#">Ver proyecto</a>
+
+        </div>
+
+    </aside>
+
+</div>
+      
   <footer>
 
     <h3>Proyecto Académico - Modelación Hidrológica</h3>
